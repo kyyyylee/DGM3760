@@ -45,6 +45,7 @@ function addNewTodo() {
   todos.push(newTodo);
   removeChildren(todoList);
   populateList(todos);
+  console.log(newTodo);
 }
 
 //User can view todos
@@ -61,6 +62,7 @@ function populateList(todos) {
   numberLeft();
 }
 
+//load up todos on page load
 populateList(todos);
 
 //App shows the user number of todos left to complete
@@ -78,3 +80,5 @@ function numberLeft() {
 //App can delete (aka clear) all done todos at once.
 
 //User can delete todos
+
+//User can edit todos
